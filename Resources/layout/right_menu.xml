@@ -1,0 +1,114 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="250dp"
+    android:layout_height="match_parent">
+    
+    <TextView
+        android:text="@string/filters_form_title"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_centerInParent="true"
+        android:id="@+id/textView1"
+        android:layout_gravity="start"
+        android:layout_marginTop="25dp" />
+    
+    <androidx.appcompat.widget.SearchView
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" 
+        android:id="@+id/searchView" 
+        android:theme="@style/AppTheme.SearchView" />
+    <ListView
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/listViewToSearchView" />
+   
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btn_calendar1"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="start|center_vertical"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@android:drawable/ic_menu_my_calendar"
+            android:visibility="visible" />
+        <EditText
+            android:id="@+id/text_edit1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             android:gravity="center" 
+            android:inputType="date"
+            android:singleLine="true" />
+        <Button
+            android:id="@+id/btn_clear_clear1"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="end|center_vertical"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@android:drawable/ic_delete"
+            android:visibility="gone" />
+    </FrameLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btn_calendar2"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="start|center_vertical"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@android:drawable/ic_menu_my_calendar"
+            android:visibility="visible" />
+        <EditText
+            android:id="@+id/text_edit2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" 
+            android:inputType="date"
+            android:singleLine="true" />
+        <Button
+            android:id="@+id/btn_clear_clear2"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="end|center_vertical"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@android:drawable/ic_delete"
+            android:visibility="gone" />
+    </FrameLayout>
+   
+    <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:gravity="top">
+        <Button
+            android:text="Ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:id="@+id/btn_Ok" />
+        <Button
+            android:text="Clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:minWidth="25px"
+            android:minHeight="25px"
+            android:id="@+id/btn_Clear" />
+    
+    </LinearLayout>
+</LinearLayout>
