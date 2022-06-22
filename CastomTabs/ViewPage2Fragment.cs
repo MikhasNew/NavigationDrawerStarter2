@@ -99,6 +99,7 @@ namespace NavigationDrawerStarter
                 plotView.Model = CreatePlotModel(selectedItem.Descripton, shareOfSumms, shareOfTransactions);
 
                 AlertDialog.Builder builder = new AlertDialog.Builder(Activity);
+               
 
 
                 builder.SetCancelable(false);

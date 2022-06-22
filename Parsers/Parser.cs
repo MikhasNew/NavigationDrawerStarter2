@@ -146,7 +146,6 @@ namespace NavigationDrawerStarter.Parsers
 
                 DataItem dataItem = new DataItem(operType, (DateTime)dateValue);
 
-
                 dataItem.Sum = float.TryParse(str[bc.NomrColumnOfSum], NumberStyles.Any, ci, out float tempSum) ? tempSum : default;
                 dataItem.Balance = float.TryParse(str[bc.NomrColumnOfBalance], NumberStyles.Any, ci, out float tempBalance) ? tempBalance : default;
                 dataItem.Karta = int.TryParse(str[bc.NomrColumnOfKarta], NumberStyles.Any, ci, out int tempKarta) ? tempKarta : default;
